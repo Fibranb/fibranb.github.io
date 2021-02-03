@@ -1,0 +1,27 @@
+.container {
+    border: 2px solid rgb(0, 102, 255);
+    width: min-content;
+    margin: 10px;
+    width: 1060px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0px;
+    margin: 40px;
+}
+.blue li {
+    background: rgb(0, 102, 255);
+    padding: 40px;
+}
+
+.orange li {
+    background: purple;
+    padding: 40px;
+}
+
+.orange {
+    background: orange;
+}
