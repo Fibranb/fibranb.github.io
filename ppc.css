@@ -1,0 +1,16 @@
+.container {
+    width: 200px;
+}
+.box {
+    border: 1px solid black;
+    border-top: 0px;
+
+}
+
+.box:hover {
+    background: orangered;
+}
+
+.posledni {
+    border-bottom: 0px;
+}
