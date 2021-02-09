@@ -1,0 +1,42 @@
+p {
+    background: #0D91A1;
+    color: #015668;
+    font-family: 'Hachi Maru Pop', cursive;
+    width: 15%;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+    border: 3px solid #7DCE94;
+    margin: 10px;
+  }
+
+  div {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: verdana;
+    margin: 0px;
+    font-size: 40px; 
+    padding: 20px;
+  }
+  
+  .north {
+    background: #E67676;
+  }
+  
+  .east {
+    background: #F2F062;
+  }
+  
+  .south {
+    background: #A9E6E6;
+  }
+  
+  .west {
+    background: #7692E4;
+  }
+  
+  .box {
+    border: 12px solid #4285f4;
+    width: 30%;
+  }
