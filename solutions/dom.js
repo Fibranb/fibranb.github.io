@@ -13,3 +13,10 @@ let additionalBlock = {
 
 $('body').append('<h1>' + additionalBlock.title + '</h1>' + '<p>' + additionalBlock.text + '</p>')
 
+$('#first').click(function() {console.log('Yeah, you clicked me')})
+
+$('#second').click(function() {$('#first').text('text changed')})
+
+$('#third').click(function() {$('h3').html('The color is ' + $("input").val()); })
+
+$('button').click(function() {$('button').css('background', $("input").val())})
