@@ -6,12 +6,12 @@ $('button').click(function() {
     $('#second').html(counter++);
 });
 
-$('#decrease').click(function() {
-    $('#second').html(finalcount--);
-});
+//$('#decrease').click(function() {
+//    $('#second').html(finalcount--);
+//});
 
 $('#todo').click(function(){
     $('ul').append('<li>' + $("input").val() + '</li>');
 });
 
-$('li').click(function() {toggleClass('crossed')})
+// $('li').click(function() {toggleClass('crossed')})
