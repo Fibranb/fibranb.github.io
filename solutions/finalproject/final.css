@@ -8,9 +8,11 @@ main {
     border: 3 solid red;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -53,4 +55,29 @@ button {
 }
 
 
-#right {transform: scaleX(-1)}
+#right {transform: scaleX(-1)
+}
+
+.container {
+    display: flex;
+    width: 520px;
+    height: 100px;
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.thumb {
+    width: 90px;
+    height: 90px;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+}
+
+.blbo {
+    width: 90%;
+}

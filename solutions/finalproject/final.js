@@ -41,21 +41,33 @@ loadPhoto(currentPhoto);
 $('#right').click(function() {
     currentPhoto++;
     loadPhoto(currentPhoto);
-    console.log(currentPhoto);
     if (currentPhoto == data.length - 1) {
         currentPhoto = -1
     };
 
 });
 
-$('#left').click(function() {
-    currentPhoto--;
-    loadPhoto(currentPhoto);
-    if (currentPhoto == 0) {
-        currentPhoto = data.length
-    };
-    if (currentPhoto < 0) {
-        currentPhoto = data.length
-    };
 
-});
+$('#left').click(function() {
+    if (currentPhoto == 0) {
+        currentPhoto = data.length - 1;
+    } else {
+      currentPhoto--;
+    }
+      loadPhoto(currentPhoto);
+  
+  });
+
+  data.forEach((item, index) => {
+    $('.container').append(`<div class="thumb" data-index="${index}"><img src="${item.photo}"></div>`);
+    $('.thumb').click(function() {
+        let indexClicked = $(this).attr('data-index');
+        let numberIndex = parseInt(indexClicked);
+        loadPhoto(numberIndex);
+        
+      });
+  });
+
+ 
+
+  
